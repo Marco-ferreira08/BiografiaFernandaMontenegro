@@ -1,0 +1,290 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4682B4; /* Cor azul que transmite calma e tranquilidade */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0e68c; /* Cor de destaque ao passar o mouse */
+    transform: scale(1.1);
+}
+
+.foto-principal {
+    display: block;
+    margin: 20px auto;
+    max-width:75%;
+    height: auto;
+    font-size: large 10;
+    margin-left: 5px;
+    text-align: end ("Foto teste");
+}
+
+.familia-foto img {
+    display: block;
+    margin: 20px auto;
+    max-width:75%;
+    height: auto;  
+}
+
+.fotos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%; /* Espaço entre as fotos */
+}
+
+.foto {
+    width: 50%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    border-bottom: 2px solid #4682B4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo da galeria */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 fotos por linha */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.foto-galeria img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.foto-galeria img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* styles.css */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Ajuste conforme necessário */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.foto-galeria img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.foto-galeria img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Modal de ampliação */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* styles.css */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Ajuste conforme necessário */
+    gap: 15px; /* Aumente o espaçamento entre as imagens se desejar */
+    margin-top: 20px;
+}
+
+.foto-galeria img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 200px; /* Ajuste a largura máxima das imagens conforme desejado */
+    max-height: 200px; /* Ajuste a altura máxima das imagens conforme desejado */
+}
+
+.foto-galeria img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Modal de ampliação */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%; /* Aumente o tamanho da imagem no modal se desejar */
+    max-height: 90%; /* Aumente o tamanho da imagem no modal se desejar */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* styles.css */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Ajuste conforme necessário */
+    gap: 20px; /* Aumente o espaçamento entre as imagens se desejar */
+    margin-top: 20px;
+}
+
+.foto-galeria img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 300px; /* Aumente a largura máxima das imagens */
+    max-height: 300px; /* Aumente a altura máxima das imagens */
+}
+
+.foto-galeria img:hover {
+    transform: scale(1.2); /* Aumenta o efeito de zoom ao passar o mouse */
+}
+
+/* Modal de ampliação */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%; /* Aumente o tamanho da imagem no modal se desejar */
+    max-height: 90%; /* Aumente o tamanho da imagem no modal se desejar */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-family: 'Times New Roman', serif; /* Fonte bonita para o rodapé */
+}
+
+footer p {
+    margin: 0;
+}
